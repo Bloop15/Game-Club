@@ -4,9 +4,7 @@ http://localhost:3000
 
 API End Points:
 
-=================================
 GAMES MANAGEMENT (/admin/games)
-=================================
 
 1> POST /admin/games -> (Create game)
 
@@ -31,7 +29,6 @@ Response Body: 201 (status code for created)
   "tags": "shooter,multiplayer,esports"
 }
 
--------------------------------------------------------------
 
 2> GET /admin/games -> (get all games)
 
@@ -57,7 +54,6 @@ Response Body: 200 (status code: fetch is ok)
   }
 ]
 
--------------------------------------------------------------
 
 3> GET /admin/games/{id} -> (get game by id)
 
