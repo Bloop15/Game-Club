@@ -1,67 +1,56 @@
-
 Base URL:
-http://localhost:8080
+http://localhost:3000
 
 Games Management (/games)
 
-POST/games– Create a new game
+POST/games – Create a new game
 
 Request body:
 {
-  "title": "Valorant",
-  "genre": "FPS",
-  "platform": "PC",
-  "releaseYear": 2020,
-  "rating": 4.7,
-  "tags": "shooter,multiplayer,esports"
+  "name": "Valorant",
+  "description": "Competitive FPS game",
+  "price": 1000,
+  "status": "Available"
 }
 
 Response (201 Created):
 {
   "_id": "game001",
-  "title": "Valorant",
-  "genre": "FPS",
-  "platform": "PC",
-  "releaseYear": 2020,
-  "rating": 4.7,
-  "tags": "shooter,multiplayer,esports"
+  "name": "Valorant",
+  "description": "Competitive FPS game",
+  "price": 1000,
+  "status": "Available"
 }
 
-GET/games– Get all games
+GET/games – Get all games
 
 Response (200 OK):
 [
   {
     "_id": "game001",
-    "title": "Valorant",
-    "genre": "FPS",
-    "platform": "PC",
-    "releaseYear": 2020,
-    "rating": 4.7,
-    "tags": "shooter,multiplayer,esports"
+    "name": "Valorant",
+    "description": "Competitive FPS game",
+    "price": 1000,
+    "status": "Available"
   },
   {
     "_id": "game002",
-    "title": "FIFA 23",
-    "genre": "Sports",
-    "platform": "PC, Console",
-    "releaseYear": 2022,
-    "rating": 4.5,
-    "tags": "football,multiplayer"
+    "name": "FIFA 23",
+    "description": "Football simulation game",
+    "price": 3000,
+    "status": "Available"
   }
 ]
 
-GET/games/{id}– Get a game by ID
+GET/games/{id} – Get a game by ID
 
 Response (200 OK):
 {
   "_id": "game001",
-  "title": "Valorant",
-  "genre": "FPS",
-  "platform": "PC",
-  "releaseYear": 2020,
-  "rating": 4.7,
-  "tags": "shooter,multiplayer,esports"
+  "name": "Valorant",
+  "description": "Competitive FPS game",
+  "price": 1000,
+  "status": "Available"
 }
 
 PUT/games/{id} – Update a game
@@ -69,30 +58,24 @@ PUT/games/{id} – Update a game
 Request body:
 {
   "_id": "game001",
-  "title": "Valorant",
-  "genre": "FPS",
-  "platform": "PC",
-  "releaseYear": 2020,
-  "rating": 4.8,
-  "tags": "shooter,multiplayer,esports"
+  "name": "Valorant",
+  "description": "Competitive FPS game with updates",
+  "price": 2000,
+  "status": "Available"
 }
 
 Response (200 OK):
 {
   "_id": "game001",
-  "title": "Valorant",
-  "genre": "FPS",
-  "platform": "PC",
-  "releaseYear": 2020,
-  "rating": 4.8,
-  "tags": "shooter,multiplayer,esports"
+  "name": "Valorant",
+  "description": "Competitive FPS game with updates",
+  "price": 2000,
+  "status": "Available"
 }
 
-DELETE/games/{id}– Delete a game
+DELETE/games/{id} – Delete a game
 
 Response (200 OK):
 {
   "message": "Game deleted successfully"
 }
-
-
