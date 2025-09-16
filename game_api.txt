@@ -2,7 +2,6 @@
 Base URL:
 http://localhost:8080
 
-
 Games Management (/games)
 
 POST/games– Create a new game
