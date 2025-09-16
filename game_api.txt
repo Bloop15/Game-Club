@@ -3,7 +3,7 @@ http://localhost:3000
 
 Games Management (/games)
 
-POST/games – Create a new game
+POST /games – Create a new game
 
 Request body:
 {
@@ -22,7 +22,7 @@ Response (201 Created):
   "status": "Available"
 }
 
-GET/games – Get all games
+GET /games – Get all games
 
 Response (200 OK):
 [
@@ -42,7 +42,7 @@ Response (200 OK):
   }
 ]
 
-GET/games/{id} – Get a game by ID
+GET /games/{id} – Get a game by ID
 
 Response (200 OK):
 {
@@ -53,7 +53,7 @@ Response (200 OK):
   "status": "Available"
 }
 
-PUT/games/{id} – Update a game
+PUT /games/{id} – Update a game
 
 Request body:
 {
@@ -73,7 +73,7 @@ Response (200 OK):
   "status": "Available"
 }
 
-DELETE/games/{id} – Delete a game
+DELETE /games/{id} – Delete a game
 
 Response (200 OK):
 {
