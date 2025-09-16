@@ -1,0 +1,70 @@
+Members Management (/members)
+
+POST/members– Create a new member
+
+Request body:
+{
+  "name": "Samanth",
+  "ph_no": "9902712481"
+  "balance": 45000,
+}
+
+Response (201 Created):
+{
+  "_id": "member001",
+  "name": "Samanth",
+  "ph_no": "9902712481"
+  "balance": 45000,
+}
+
+GET/members– Get all members
+
+Response (200 OK):
+[
+  {
+    "_id": "member001",
+    "name": "Samanth",
+    "ph_no": "9902712481"
+    "balance": 45000,
+  },
+  {
+    "_id": "member002",
+    "name": "Snehil",
+    "ph_no": "9568281921"
+    "balance": 32050,
+  }
+]
+
+GET/members/{id}– Get a member by ID
+
+Response (200 OK):
+{
+  "_id": "member001",
+  "name": "Samanth",
+  "ph_no": "9902712481"
+  "balance": 45000,
+}
+
+PUT/members/{id}– Update a member
+
+Request body:
+{
+  "name": "Snehil",
+  "ph_no": "9568281921"
+  "balance": 18000,
+}
+
+Response (200 OK):
+{
+  "_id": "member002",
+  "name": "Snehil",
+  "ph_no": "9568281921"
+  "balance": 18000,
+}
+
+DELETE/members/{id}– Delete a member
+
+Response (200 OK):
+{
+  "message": "Member deleted successfully"
+}
