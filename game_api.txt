@@ -1,0 +1,99 @@
+
+Base URL:
+http://localhost:8080
+
+
+Games Management (/games)
+
+POST/games– Create a new game
+
+Request body:
+{
+  "title": "Valorant",
+  "genre": "FPS",
+  "platform": "PC",
+  "releaseYear": 2020,
+  "rating": 4.7,
+  "tags": "shooter,multiplayer,esports"
+}
+
+Response (201 Created):
+{
+  "_id": "game001",
+  "title": "Valorant",
+  "genre": "FPS",
+  "platform": "PC",
+  "releaseYear": 2020,
+  "rating": 4.7,
+  "tags": "shooter,multiplayer,esports"
+}
+
+GET/games– Get all games
+
+Response (200 OK):
+[
+  {
+    "_id": "game001",
+    "title": "Valorant",
+    "genre": "FPS",
+    "platform": "PC",
+    "releaseYear": 2020,
+    "rating": 4.7,
+    "tags": "shooter,multiplayer,esports"
+  },
+  {
+    "_id": "game002",
+    "title": "FIFA 23",
+    "genre": "Sports",
+    "platform": "PC, Console",
+    "releaseYear": 2022,
+    "rating": 4.5,
+    "tags": "football,multiplayer"
+  }
+]
+
+GET/games/{id}– Get a game by ID
+
+Response (200 OK):
+{
+  "_id": "game001",
+  "title": "Valorant",
+  "genre": "FPS",
+  "platform": "PC",
+  "releaseYear": 2020,
+  "rating": 4.7,
+  "tags": "shooter,multiplayer,esports"
+}
+
+PUT/games/{id} – Update a game
+
+Request body:
+{
+  "_id": "game001",
+  "title": "Valorant",
+  "genre": "FPS",
+  "platform": "PC",
+  "releaseYear": 2020,
+  "rating": 4.8,
+  "tags": "shooter,multiplayer,esports"
+}
+
+Response (200 OK):
+{
+  "_id": "game001",
+  "title": "Valorant",
+  "genre": "FPS",
+  "platform": "PC",
+  "releaseYear": 2020,
+  "rating": 4.8,
+  "tags": "shooter,multiplayer,esports"
+}
+
+DELETE/games/{id}– Delete a game
+
+Response (200 OK):
+{
+  "message": "Game deleted successfully"
+}
+
+
