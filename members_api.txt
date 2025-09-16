@@ -1,6 +1,6 @@
 Members Management (/members)
 
-POST/members– Create a new member
+POST /members– Create a new member
 
 Request body:
 {
@@ -17,7 +17,7 @@ Response (201 Created):
   "balance": 45000,
 }
 
-GET/members– Get all members
+GET /members– Get all members
 
 Response (200 OK):
 [
@@ -35,7 +35,7 @@ Response (200 OK):
   }
 ]
 
-GET/members/{id}– Get a member by ID
+GET /members/{id}– Get a member by ID
 
 Response (200 OK):
 {
@@ -45,7 +45,7 @@ Response (200 OK):
   "balance": 45000,
 }
 
-PUT/members/{id}– Update a member
+PUT /members/{id}– Update a member
 
 Request body:
 {
@@ -62,7 +62,7 @@ Response (200 OK):
   "balance": 18000,
 }
 
-DELETE/members/{id}– Delete a member
+DELETE /members/{id}– Delete a member
 
 Response (200 OK):
 {
